@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <h1 class="header-title">PORTFOLIO</h1>
+            <p class="header-name">Kazuki Takahashi</p>
+            <p class="header-address">050-0000-0000</p>
+        </div>
+        <div class="nav-btn" id="js-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Likes</a></li>
+                <li><a href="">Latest Works</a></li>
+                <li><a href="">Works</a></li>
+                <li><a href="">Skill</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="main-section">
+            <h2>自己PR</h2>
+            <p></p>
+            <h2>学生時代に力を入れたこと</h2>
+            <p></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <h2 class="footer-title">PORTFOLIO</h2>
+            <p class="footer-name">Kazuki Takahashi</p>
+            <p class="footer-address">050-0000-0000</p>
+        </div>
+        <nav class="footer-nav">
+            <div class="footer-middle">
+                <li><a href="">About</a></li>
+                <li><a href="">Likes</a></li>
+                <li><a href="">Latest Works</a></li>
+            </div>
+            <div class="footer-right">
+                <li><a href="">Works</a></li>
+                <li><a href="">Skill</a></li>
+                <li><a href="">Contact</a></li>
+            </div>
+        </nav>
+    </footer>
+    <script>
+        let $button=document.querySelector('#js-btn')
+        let nav=document.querySelector('.header-nav')
+        $button.addEventListener('click',(e)=>{
+            nav.classList.toggle('.active')
+            if(nav.classList.contains('active')){
+                nav.classList.remove('active')
+            }else{
+                nav.classList.add('active')
+            }
+        })
+    </script>
+</body>
+</html>
